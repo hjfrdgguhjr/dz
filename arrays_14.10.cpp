@@ -3,10 +3,10 @@
 int main() 
 {
     setlocale(LC_ALL, "RU");
-    std::cout << "Çàäàíèå 1\n";
+    std::cout << "Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 1\n";
     const int size = 10;
     int arr[size];
-    std::cout << "Ââåäèòå " << size << " ýëåìåíòîâ ìàññèâà:" << "\n";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << size << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°:" << "\n";
     for (int i = 0; i < size; i++) {
         std::cin >> arr[i];
     }
@@ -23,21 +23,21 @@ int main()
             max = arr[i];
         }
     }
-    std::cout << "Ìèíèìàëüíûé ýëåìåíò: " << min << "\n";
-    std::cout << "Ìàêñèìàëüíûé ýëåìåíò: " << max << "\n";
+    std::cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚: " << min << "\n";
+    std::cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚: " << max << "\n";
 
 
 
 
 
-    std::cout << "Çàäàíèå 2\n";
+    std::cout << "Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 2\n";
     int userValue;
-    std::cout << "Ââåäèòå " << size << " ýëåìåíòîâ ìàññèâà:" << "\n";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << size << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°:" << "\n";
     for (int i = 0; i < size; i++)
     {
         std::cin >> arr[i];
     }
-    std::cout << "Ââåäèòå çíà÷åíèå äëÿ ñðàâíåíèÿ: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ ÑÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ñ: ";
     std::cin >> userValue;
     int sum = 0;
     for (int i = 0; i < size; i++)
@@ -47,28 +47,28 @@ int main()
             sum += arr[i];
         }
     }
-    std::cout << "Ñóììà ýëåìåíòîâ ìåíüøå " << userValue << ": " << sum << "\n";
+    std::cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼ÐµÐ½ÑŒÑˆÐµ " << userValue << ": " << sum << "\n";
 
 
 
 
-    std::cout << "Çàäàíèå 3\n";
+    std::cout << "Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 3\n";
     const int MONTHS = 12;
     double profit[MONTHS];
     int startMonth, endMonth;
-    std::cout << "Ââåäèòå ïðèáûëü ôèðìû çà 12 ìåñÿöåâ:" << "\n";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¸Ð±Ñ‹Ð»ÑŒ Ñ„Ð¸Ñ€Ð¼Ñ‹ Ð·Ð° 12 Ð¼ÐµÑÑÑ†ÐµÐ²:" << "\n";
     for (int i = 0; i < MONTHS; i++) 
     {
-        std::cout << "Ìåñÿö " << (i + 1) << ": ";
+        std::cout << "ÐœÐµÑÑÑ† " << (i + 1) << ": ";
         std::cin >> profit[i];
     }
-    std::cout << "Ââåäèòå íà÷àëüíûé ìåñÿö äèàïàçîíà (1-12): ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¼ÐµÑÑÑ† Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð° (1-12): ";
     std::cin >> startMonth;
-    std::cout << "Ââåäèòå êîíå÷íûé ìåñÿö äèàïàçîíà (1-12): ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð½ÐµÑ‡Ð½Ñ‹Ð¹ Ð¼ÐµÑÑÑ† Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð° (1-12): ";
     std::cin >> endMonth;
     if (startMonth < 1 || startMonth > 12 || endMonth < 1 || endMonth > 12 || startMonth > endMonth) 
     {
-        std::cout << "Îøèáêà: íåêîððåêòíûé äèàïàçîí!" << "\n";
+        std::cout << "ÐžÑˆÐ¸Ð±ÐºÐ°: Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½!" << "\n";
     }
     int minMonth = startMonth - 1;
     int maxMonth = startMonth - 1;
@@ -83,8 +83,8 @@ int main()
             maxMonth = i;
         }
     }
-    std::cout << "\nÐåçóëüòàòû àíàëèçà:" << "\n";
-    std::cout << "Ìèíèìàëüíàÿ ïðèáûëü â ìåñÿöå: " << (minMonth + 1) << " (" << profit[minMonth] << ")" << "\n";
-    std::cout << "Ìàêñèìàëüíàÿ ïðèáûëü â ìåñÿöå: " << (maxMonth + 1) << " (" << profit[maxMonth] << ")" << "\n";
+    std::cout << "\nÐ ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ð°Ð½Ð°Ð»Ð¸Ð·Ð°:" << "\n";
+    std::cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ð¿Ñ€Ð¸Ð±Ñ‹Ð»ÑŒ Ð² Ð¼ÐµÑÑÑ†Ðµ: " << (minMonth + 1) << " (" << profit[minMonth] << ")" << "\n";
+    std::cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ð¿Ñ€Ð¸Ð±Ñ‹Ð»ÑŒ Ð² Ð¼ÐµÑÑÑ†Ðµ: " << (maxMonth + 1) << " (" << profit[maxMonth] << ")" << "\n";
     return 0;
 }
